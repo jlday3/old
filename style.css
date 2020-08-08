@@ -1,0 +1,182 @@
+.headimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 100px;
+}
+
+main {
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row {
+	margin: auto;
+	padding: 10px;
+	width: 75%;
+	margin-top: 30px;
+}
+
+.iconrow {
+padding-left: 15px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 200px; 
+  padding-bottom: 15px;
+ }
+
+.iconrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer{
+	padding-left: 10px;
+	padding-right: 10px;
+	height: 60px;
+	background-color: #FFD700;
+}
+
+.footerleft {
+	width: 50%;
+	float: left;
+}
+.footerright{
+	text-align: right;
+	font-size: 24px;
+	font-weight: bold;
+    display: inline-block;
+    padding:0px;
+}
+
+footer:after {
+	display: table;
+	clear: both;
+}
+
+.button {
+	color: #ffffff;
+  	text-decoration: none;
+  	padding: 10px;
+  	margin-right: 10px;
+  	text-align: center;
+  	display: inline-block;
+  	border: 0;
+  	font-family: Georgia;
+  	font-size: 24px;
+  	background-color: transparent;
+}
+
+#square {
+  width: 100px;
+  height: 100px;
+  background-color: #800000;
+}
+
+#rectangle {
+  width: 150px;
+  height: 100px;
+  background-color: #000066;
+}
+
+#circle {
+  width: 100px;
+  height: 100px;
+  background: #800000;
+  border-radius: 50%
+}
+
+#oval {
+  width: 200px;
+  height: 100px;
+  background: #000066;
+  border-radius: 100px / 50px;
+}
+
+#parallelogram {
+  width: 150px;
+  background-color: #800000;  
+  height: 100px;
+  transform: skew(20deg);
+
+}
+
+#egg {
+  width: 126px;
+  height: 180px;
+  background-color: #000066;
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+#base {
+  background: #800000;
+  display: inline-block;
+  height: 55px;
+  margin-left: 20px;
+  margin-top: 55px;
+  position: relative;
+  width: 100px;
+}
+#base:before {
+  border-bottom: 35px solid #FFD700	;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  content: "";
+  height: 0;
+  left: 0;
+  position: absolute;
+  top: -35px;
+  width: 0;
+}
+#heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "ASU";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: #000066;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+#talkbubble {
+  margin-left: 30px;
+  width: 120px;
+  height: 80px;
+  background: #800000;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#talkbubble:before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 26px;
+  width: 0;
+  height: 0;
+  border-top: 13px solid transparent;
+  border-right: 26px solid #FFD700;
+  border-bottom: 13px solid transparent;
+}
